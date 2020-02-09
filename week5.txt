@@ -1,0 +1,45 @@
+สรุปWeek5 
+
+1. Function Call และ Stack Frames 
+
+Stack Frame คือบริเวณที่เก็บตัวแปรต่างๆเช่นพารามิเตอร์,ตัวแปรLocal ซื่งจะเก็บอยู่ในStackของProcess 
+
+เมื่อฟังก์ชันถูกเรียก stack frame จะถูกสร้างขึ้น (1 stack frame ต่อการเรียกใช้ฟังก์ชัน 1 ครั้ง) 
+
+เมื่อฟังก์ชันทำงานเสร็จ stack frame จะถูกทำลาย โดยที่การทำงานของโปรแกรมจะกลับไปทำคำสั่ง ณ return address 
+
+การสร้าง Static Library 
+
+พิมพ์ในTerminalหรือcmd 
+
+gcc -c func.c  
+
+ ar cr libfunc.a func.o 
+
+การสร้าง Shared (Dynamic) Library 
+
+ในแต่ละระบบปฏิบัติการจะมีคำสั่งที่ไม่เหมือนกัน 
+
+Windows 
+
+      gcc -shared -o libfunc.dll -Wl,--out-implib,libfunc.dll.a *.o 
+
+MacOSX 
+
+               gcc -shared -o libfunc.dylib *.o 
+
+Linux 
+
+               gcc -shared -o libfunc.so *.o 
+
+การเรียกใช้ฟังก์ชันใน Shared Library ของภาษา C จาก Python 
+
+     from ctypes import cdll 
+
+     c_lib = cdll.LoadLibrary("libfunc.dll") 
+
+     c_lib.c_function(123) 
+
+ 
+
+ 
