@@ -1,0 +1,87 @@
+สรุปweek4 
+
+1. Function Definition (การนิยามฟังก์ชัน) 
+
+การนิยามฟังก์ชั่นเพื่อที่จะเรียกใช้ในส่วนนั้นๆ โดยที่ไม่ต้องสับสนว่าโค้ดนี้ทำอะไร โดยการนิยามฟังก์ชั่นนั้นมีรูปแบบดังนี้ 
+
+return-value-type function-name (parameter-list) 
+
+    { 
+
+       declarations 
+
+       statement 
+
+       statement 
+
+       : 
+
+    } 
+
+2.Standard Library Functions and Math Library Functions 
+
+ฟังก์ชั่นprintf scanf getschar เป็นฟังก์ชั่นที่อยู่ใน <stdlib.h> 
+
+ฟังก์ชั่น sqrt ceil floor เป็นฟังก์ชั่นที่อยู่ใน <math.h> 
+
+3. Using Functions as Parameters to Functions 
+
+ฟังก์ชั่นนั้นสามารถที่จะมีพารามิเตอร์ที่จะส่งค่าไปให้อีกฟังก์ชั่นได้ รูปแบบการใช้พารามิเตอร์ 
+
+   long triple(long val) 
+
+    { 
+
+       return 3 * val; 
+
+    } 
+
+4. Recursion (การเรียกซ้ำ) 
+
+คือฟังก์ชั่นที่สามารถเรียกใช้งานฟังก์ชั่นตัวเองได้ โดยRecusionนั้น มีการใช้งานไม่ว่าจะเป็น Fibonacci โดยมีรูปแบบดังนี้ 
+
+    long Fib(long n) 
+
+    { 
+
+       if (n <= 2) 
+
+          return 1; 
+
+       else 
+
+          return Fib(n-1) + Fib(n-2); 
+
+    } 
+
+5. Local Variables 
+
+คือตัวแปรที่ถูกกำหนดไว้ในฟังก์ชั่น รวมไปถึงพารามิเตอร์อีกด้วย 
+
+6.Global Variables 
+
+คือตัวแปรที่ถูกกำหนดไว้นอกฟังก์ชั่น แล้วสามารถนำไปเรียกใช้งานในฟังก์ชั่นต่างๆได้ ไม่ว่าจะเป็นฟังก์ชั่นmain หรือฟังก์ชั่นที่เรา define มาเองเป็นต้น 
+
+7.Random Number Generator 
+
+ฟังก์ชั่น rand เป็นฟังก์ชั่นที่ใช้สุ่มตัวเลขในการเอาไปใช้ โดยการรันในแต่ละครั้งฟังก์ชั่นrand จะสุ่มตัวเลขที่มีชุดตัวเลขเหมือนกัน ดังนั้นหากผู้ใช้ต้องการตัวเลขที่ต่างชุดกันออกไป จึงต้องกำหนดการใช้ฟังก์ชั่น srand โดยมีรูปแบบการใช้ดังนี้ 
+
+#include <stdio.h> 
+
+     #include <stdlib.h> 
+
+     int main() 
+
+     {  int i; 
+
+        srand(10); 
+
+        for (i=0; i < 10; i++) 
+
+           printf("%d\n", rand()%6+1); 
+
+     } 
+
+ 
+
+ 
