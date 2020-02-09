@@ -1,0 +1,79 @@
+สรุปWeek3 
+
+การใช้ if else 
+
+if (expression) 
+
+      statement1 
+
+   else  
+
+      Statement2 
+
+การใช้ else if 
+
+if (expression1) 
+
+      statement1 
+
+   else if (expression2) 
+
+      Statement2 
+
+การใช้switch case 
+
+Switch case นั้นคล้ายๆ if else แต่จะหยุดการทำงานเมื่อเจอ break เมื่อเจอbreakจะหลุดออกจากswitch 
+
+หลักการใช้ 
+
+  switch (expression) { 
+
+      case const-expr:  
+
+         statements 
+
+      case const-expr: 
+
+         statements 
+
+      default:  
+
+         statements 
+
+   } 
+
+ลูป While 
+
+หลักการใช้ 
+
+while (expression)  
+
+      Statement 
+
+จะทำงาน จนกว่า expression นั้นจะกลายเป็นเท็จ 
+
+ลูป For 
+
+หลักการใช้ 
+
+  for (expr1; expr2; expr3) 
+
+       Statement 
+
+expr1 และ expr3 จะเป็นการกำหนดค่าหรือการเรียกใช้ฟังก์ชัน ส่วน expr2 จะเป็นการเปรียบเทียบค่า 
+
+Loops - Do-While 
+
+do { 
+
+       statement 
+
+    } while (expression); 
+
+จะเข้าstatementก่อน จากนั้นถึงไปเช็คที่expression จะทำงานไปเรือยๆจนกว่าexpressionจะเป็นเท็จ 
+
+Break จะช่วยให้โปรแกรมหลุดออกจากLoop 
+
+Continue จะบังคับให้โปรแกรมเข้าLoopใหม่ 
+
+ 
