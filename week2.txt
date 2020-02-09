@@ -1,0 +1,79 @@
+สรุปweek2 
+
+-การตั้งชื่อตัวแปร (Variable Names) 
+
+-การตั้งชื่อตัวแปรนั้น ควรตั้งชื่อตัวแปรให้เหมาะสมกับการใช้งาน และอ่านเข้าใจได้ง่าย ไม่สับสนเช่น 
+
+weekly_pay = hours_worked * hourly_pay_rate; 
+
+-ประเภทข้อมูลและขนาด (Data Types and Sizes) 
+
+ในภาษาCขนาดของประเภทของข้อมูลมีขนาดไม่เท่ากัน โดยขนาดแต่ละอันสามารถใช้sizeofในการเช็คขนาดและข้อมูลได้ เช่น 
+
+#include <stdio.h> 
+
+    int main() 
+
+    {   printf("sizeof(char)   = %d\n", sizeof(char)); 
+
+        printf("sizeof(int)    = %d\n", sizeof(int)); 
+
+        printf("sizeof(float)  = %d\n", sizeof(float)); 
+
+        printf("sizeof(double) = %d\n", sizeof(double)); 
+
+        printf("sizeof(short)  = %d\n", sizeof(short)); 
+
+        printf("sizeof(long)   = %d\n", sizeof(long)); 
+
+    } 
+
+โดยแต่ละประเภท มีขนาดดังนี้ 
+
+  - char 1 byte 
+
+  - int 4 bytes 
+
+  - float 4 bytes 
+
+  - double 8 bytes 
+
+  - long 4 or 8 bytes 
+
+  - void 1 byte 
+
+ 
+
+-การประกาศ (Declarations) 
+
+ในภาษาCนั้น จะต้องประกาศtype ของตัวแปรก่อนจะใช้งานเสมอโดยการระบุประเภทของตัวแปรนั้นๆ เช่น int float char เป็นต้น 
+
+Printf/puts 
+
+Printf ไม่ขึ้นบรรทัดใหม่ แต่ putsขึ้นบรรทัดใหม่ 
+
+getchar() ใช้รับอักขระ 1 ตัวจาก stdin เข้ามาในโปรแกรม 
+
+putchar() ใช้ส่งอักขระ 1 ตัวออกไปยัง stdout 
+
+Arithmetic Operators 
+
+เครื่องหมาย +, -, *, /, % 
+
+โดยในภาษาC % ไม่สามารถใช้กับตัวแปรประเภท float และ double ได้ 
+
+Relational Operators และ Logical Operators 
+
+Relational Operators 
+
+>, >=, <, <=,==, != 
+
+Logical Operators 
+
+&&, ||,! 
+
+ 
+
+ 
+
+ 
